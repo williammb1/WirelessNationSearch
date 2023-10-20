@@ -1,0 +1,18 @@
+<!-- This is your index.html or another page within your project -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+</head>
+<body>
+
+    <!-- Link to another page within your project -->
+    <a href="HTML.html">Another Page</a>
+
+    <!-- Or link to external resources -->
+    <a href="https://example.com">External Resource</a>
+
+</body>
+</html>
