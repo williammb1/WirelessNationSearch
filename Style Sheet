@@ -1,0 +1,68 @@
+/* External Stylesheet */
+
+/* Load Open Sans font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+body, input, button {
+    font-family: 'Open Sans', sans-serif;  /* Apply Open Sans font */
+}
+
+#question-container {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;  /* New */
+}
+
+#question {
+    flex-grow: 1;
+    width: auto;
+    height: 50px;  /* Adjust this value to your desired height */
+    padding: 10px;  /* Adjust padding as necessary */  
+}
+
+#ask-link {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding-right: 10px;  /* This line adds 10px of padding to the right */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: -70px;  /* Adjust as necessary to position the icon */
+    display: flex;
+    align-items: center;
+}
+
+#ask-icon {
+    width: 40px;  /* Adjust width as necessary */
+    height: 40px;  /* Adjust height as necessary */
+}
+
+
+#answer {
+    border: 1px solid #868C96;
+    background-color: #F7F7F8;
+    color: black;
+    padding: 10px;
+    margin-top: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    flex-direction: column;
+    transition: min-height 0.3s ease;  
+}
+
+#spinner {
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #3498db;
+    border-radius: 50%;  /* Make the spinner a circle */
+    width: 20px;
+    height: 20px;
+    animation: none; /* Remove the spinning animation here */
+    margin: auto;  /* Center spinner horizontally */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
